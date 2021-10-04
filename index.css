@@ -34,6 +34,7 @@ body {
   max-width: 90vw;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -126,7 +127,5 @@ a {
 @media only screen and (max-width: 480px) {
   .about-me-container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }
