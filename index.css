@@ -78,7 +78,6 @@ nav {
   box-sizing: border-box;
 }
 
-
 footer {
   margin-top: auto;
   padding: var(--spacing-2) 0;
@@ -127,5 +126,7 @@ a {
 @media only screen and (max-width: 480px) {
   .about-me-container {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
