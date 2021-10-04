@@ -89,13 +89,6 @@ section {
   padding: var(--spacing-3) 0;
 }
 
-.icon {
-  font-size: 2em;
-  color: var(--font-color);
-  margin: 0 var(--spacing-1);
-  box-sizing: border-box;
-}
-
 a {
   color: var(--font-color);
   text-decoration: none;
