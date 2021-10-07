@@ -67,8 +67,12 @@ nav {
   box-sizing: border-box;
 }
 
-.navigation-item:hover {
-  color: #555;
+.navigation-items li:last-child {
+  margin-right: 0px;
+}
+
+.navigation-item a:hover {
+  color:hsla(266, 3%, 43%, 0.829)
 }
 
 .toggle-button {
@@ -98,7 +102,7 @@ nav {
 
 .about-me-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 }
