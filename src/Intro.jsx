@@ -10,7 +10,7 @@ export default function Intro() {
                 Welcome
             </h3>
             <p>
-                I am a Front-End Developer / UI designer specalizing in building e-commerce, portfolio and experimental art apps.
+                I am a Toronto based Front-End Developer / UI designer specalizing in building e-commerce, portfolio and experimental art apps.
             </p>
         </div>
     )
