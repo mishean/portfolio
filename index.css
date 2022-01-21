@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--font-color);
+}
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --border-radius: 12px;
+  --font-color: #323232;
+}
+
+h1 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Proza Libre", sans-serif;
+  margin: 0;
+  margin-bottom: var(--spacing-2);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#projects p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navigation-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.navigation-item {
+  margin: var(--spacing-1);
+  box-sizing: border-box;
+}
+
+.navigation-items li:last-child {
+  margin-right: 0px;
+}
+
+.navigation-item a:hover {
+  color:hsla(266, 3%, 43%, 0.829)
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  padding: 0.40rem 0;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(17, 16, 16);
+  border-radius: 10px;
+}
+
+.portrait {
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.about-me-text-container {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  flex-shrink: 1;
+  box-sizing: border-box;
+}
+
+footer {
+  margin-top: auto;
+  padding: var(--spacing-2) 0;
+  text-align: center;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+.icon {
+  font-size: 2em;
+  color: var(--font-color);
+  margin: 0 var(--spacing-1);
+  box-sizing: border-box;
+
+
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#logo {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: var(--spacing-2);
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .about-me-container {
+     flex-direction: column;
+  }
+
+  .about-me-text-container {
+     align-self: baseline;
+  }
+  
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navigation-items {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navigation-item {
+    text-align: center;
+  }
+  .navigation-items li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .navigation-item a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navigation-items.active {
+    display: flex;
+  }
+}
