@@ -1,6 +1,11 @@
 .orange {
     color: pink;
-    height: 50vh;
-    background-color: yellow;
-    margin-bottom: auto;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+

@@ -12,12 +12,13 @@ function App() {
   return (
     <Router>
       <Header/>
+      <Footer/>
       <Routes>
         <Route path="/" element={<Display/>}/>
         <Route path="/intro" element={<Intro/>}/>
         <Route path="/contact" element={<ContactUs/>}/>
       </Routes>
-      <Footer/>
+      
     </Router>
   );
 }

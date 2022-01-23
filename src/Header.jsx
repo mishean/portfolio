@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import './Header.css'
 
 function Header() {
   return (
-    <div>
+    <div className='dookie'>
         <nav>
         <Link to="/"> Mishean </Link>
         <Link to="/intro"> Profile </Link>

@@ -1,11 +1,12 @@
 import React from 'react'
 import {QuickStartCanvas} from 'react-pts-canvas'
+import './Display.css'
 
 let radius = 50;
 
 function Display() {
   return (
-  <div>
+  <div className='mr'>
       <QuickStartCanvas background="#62e" name="quickstart-tester" 
             onAnimate={ (space, form, t, ft) => {
               form.point( space.pointer, radius, "circle" );
