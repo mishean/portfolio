@@ -1,8 +1,7 @@
 .orange {
     color: pink;
-    position: fixed;
     z-index: 10;
-    bottom: 0;
+    margin-top: auto;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;

@@ -1,7 +1,5 @@
 import React from 'react';
-
-
-
+import Footer from './Footer';
 
 export default function Intro() {
     return (
@@ -87,6 +85,7 @@ export default function Intro() {
                 </li>
 
             </ul>
+            <Footer/>
         </div>
     )
 }

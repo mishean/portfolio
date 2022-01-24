@@ -4,6 +4,8 @@ import Name from './Name';
 import Email from './Email';
 import Message from './Message';
 import emailjs from '@emailjs/browser';
+import Footer from './Footer';
+import pdf from './docs/Resume.pdf'
 
 export const ContactUs = () => {
 
@@ -68,6 +70,13 @@ export const ContactUs = () => {
 
       <input type="submit" value="Send" />
     </form>
+    <div>
+          <a href="http://www.linkedin.com/in/mishean-peiris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/mishean">Github</a>
+          <a href="mailto:misheanpeiris@gmail.com">email</a>
+          <a href={pdf} target="_blank" rel="noreferrer">Resume</a>
+    </div>
+    <Footer/>
     </div>
   );
 };
