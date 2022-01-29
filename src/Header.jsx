@@ -23,8 +23,10 @@ function Header() {
     <div>
         <nav className={show ? 'nav nav-2' : 'nav'}>
         <Link className='logo' to="/"> Mishean </Link>
-        <Link to="/intro"> Profile </Link>
-        <Link to="/contact"> Contact </Link>
+        <div className='nav-item'>
+        <Link className='item' to="/intro"> Profile </Link>
+        <Link className='item'  to="/contact"> Contact </Link>
+        </div>
       </nav>
     </div>
   )

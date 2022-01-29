@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import {QuickStartCanvas, PtsCanvas} from "react-pts-canvas";
+import {QuickStartCanvas} from "react-pts-canvas";
 import {ChartExample, AnimationExample} from './Example';
 import {Util, Line} from 'pts';
-import Highlight from 'react-highlight'
-import {Pt, Group, Create, Sound, Triangle, Const, Geom} from 'pts/dist/es5'
+
 
 export default class Home extends Component {
   constructor( props ) {

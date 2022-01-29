@@ -4,8 +4,12 @@ import Name from './Name';
 import Email from './Email';
 import Message from './Message';
 import emailjs from '@emailjs/browser';
-import Footer from './Footer';
 import pdf from './docs/Resume.pdf'
+import Footer from './Footer';
+import {BsLinkedin, BsGithub} from 'react-icons/bs';
+import {MdEmail} from 'react-icons/md';
+import {IoDocument} from 'react-icons/io5'
+import './Contact.css'
 
 export const ContactUs = () => {
 
@@ -53,30 +57,35 @@ export const ContactUs = () => {
 
   return (
     <div>
+    <div className='contact-body'>
     {status && Alert()}
-    <form onSubmit={sendEmail}>
-      <h2>Send me a message :)</h2>
+    <div>
+        <h2>Send me a message :)</h2>
         <p>
                 For a wider sample of work including public client projects, feel free to include a request for a portfolio in your message. 
-            </p>
-      <Subject value={value.subject} handleChange={handleChange} label='Subject' name='subject' type='text' placeholder = 'Subject' />
+        </p>
+    </div>
+    <form onSubmit={sendEmail}>
+      <Subject value={value.subject} handleChange={handleChange} label='Subject' name='subject' type='text' placeholder = 'Subject' className={`input-input`}/>
 
-      <Name value={value.name} handleChange={handleChange} label='Name' name='name' type='text' placeholder = 'Name' />
+      <Name value={value.name} handleChange={handleChange} label='Name' name='name' type='text' placeholder = 'Name' className={`input-input`}/>
 
-     <Email value={value.email} handleChange={handleChange} label='Email' name='email' type='email' placeholder = 'Email' />
+     <Email value={value.email} handleChange={handleChange} label='Email' name='email' type='email' placeholder = 'Email' className={`input-input`}/>
 
-      <Message value={value.message} handleChange={handleChange} label='Message' name='message' type='text' placeholder = 'Message' />
-
-
+      <Message value={value.message} handleChange={handleChange} label='Message' name='message' type='text' placeholder = 'Message' className={`input-input`}/>
+      
       <input type="submit" value="Send" />
     </form>
-    <div>
-          <a href="http://www.linkedin.com/in/mishean-peiris/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/mishean">Github</a>
-          <a href="mailto:misheanpeiris@gmail.com">email</a>
-          <a href={pdf} target="_blank" rel="noreferrer">Resume</a>
+    <div className='media-link'>
+          <a href="http://www.linkedin.com/in/mishean-peiris/" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a> 
+            
+          <a href="https://github.com/mishean"><BsGithub/></a>
+          <a href="mailto:misheanpeiris@gmail.com"><MdEmail/></a>
+          <a href={pdf} target="_blank" rel="noreferrer"><IoDocument/></a>
+          
     </div>
-    <Footer/>
+    </div>
+    <Footer className='w'/>
     </div>
   );
 };

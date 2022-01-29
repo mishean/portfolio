@@ -8,9 +8,33 @@
      -ms-user-select: none;
      transition-timing-function: ease-in;
      transition:1s;
-
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items:center;
+     width: 100%;
 } 
 
 .nav-2 {
      backdrop-filter: blur(5px);
+}
+
+.nav-item {
+     display: flex;
+}
+
+.item{
+     display: inline-block;
+     padding: 10px 15px;
+     color: yellow;
+     text-decoration: none;
+     font-size: 1.6rem;
+
+}
+
+.logo {
+     color: yellow;
+     text-decoration: none;
+     font-size: 2rem;
+     padding: 10px 15px;
 }

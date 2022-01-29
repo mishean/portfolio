@@ -1,10 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
+import './Intro.css'
 
 export default function Intro() {
     return (
-        <div>
-            <p>
+        <div className='body-main'>
+            <div className='main'>
+            <p className='intro-p'>
                 I am a Toronto based Front-End Developer / UI designer specalizing in building e-commerce, portfolio and experimental art apps.
             </p>
             <h4>
@@ -83,8 +85,8 @@ export default function Intro() {
                 <li>
                     Notion
                 </li>
-
             </ul>
+            </div>
             <Footer/>
         </div>
     )
