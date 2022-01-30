@@ -7,7 +7,7 @@ export default function Intro() {
         <div className='body-main'>
             <div className='main'>
             <p className='intro-p'>
-                I am a Toronto based Front-End Developer / UI designer specalizing in building e-commerce, portfolio and experimental art apps.
+                I am a Toronto based Front-End Developer / UI designer specalizing in building e-commerce, portfolio and experimental art apps 👨🏾‍💻
             </p>
             <h4>
                 Services

@@ -1,10 +1,9 @@
 import './form.css'
 
 const Message = (props) => {
-  const { handleChange, label, name, type, value, placeholder } = props;
+  const { handleChange, name, type, value, placeholder } = props;
   return (
     <div className="outside">
-      <label htmlFor={name}>{label}</label>
       <textarea type={type} onChange={handleChange} value={value} name={name} placeholder={placeholder} required />
     </div>
   )

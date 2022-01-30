@@ -11,6 +11,7 @@ import {MdEmail} from 'react-icons/md';
 import {IoDocument} from 'react-icons/io5'
 import './Contact.css'
 
+
 export const ContactUs = () => {
 
   const [value, setValue] = useState({
@@ -56,42 +57,42 @@ export const ContactUs = () => {
   }
 
   return (
-    <div>
+    <div className='outtermost'>
     <div className='contact-body'>
-    {status && Alert()}
     <div>
-        <h2>Send me a message :)</h2>
+        <h2>Please send me a message 📮</h2>
         <p>
                 For a wider sample of work including public client projects, feel free to include a request for a portfolio in your message. 
         </p>
     </div>
     <form onSubmit={sendEmail}>
-      <Subject value={value.subject} handleChange={handleChange} label='Subject' name='subject' type='text' placeholder = 'Subject' className={`input-input`}/>
+      <Subject value={value.subject} handleChange={handleChange} name='subject' type='text' placeholder = 'Subject' className={`input-input`}/>
 
-      <Name value={value.name} handleChange={handleChange} label='Name' name='name' type='text' placeholder = 'Name' className={`input-input`}/>
+      <Name value={value.name} handleChange={handleChange} name='name' type='text' placeholder = 'Name' className={`input-input`}/>
 
-     <Email value={value.email} handleChange={handleChange} label='Email' name='email' type='email' placeholder = 'Email' className={`input-input`}/>
+     <Email value={value.email} handleChange={handleChange} name='email' type='email' placeholder = 'Email' className={`input-input`}/>
 
-      <Message value={value.message} handleChange={handleChange} label='Message' name='message' type='text' placeholder = 'Message' className={`input-input`}/>
+      <Message value={value.message} handleChange={handleChange} name='message' type='text' placeholder = 'Message' className={`input-input`}/>
       
       <input type="submit" value="Send" />
     </form>
+    {status && Alert()}
     <div className='media-link'>
-          <a href="http://www.linkedin.com/in/mishean-peiris/" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a> 
+          <a href="http://www.linkedin.com/in/mishean-peiris/" target="_blank" rel="noopener noreferrer" className='link'><BsLinkedin/></a> 
             
-          <a href="https://github.com/mishean"><BsGithub/></a>
-          <a href="mailto:misheanpeiris@gmail.com"><MdEmail/></a>
-          <a href={pdf} target="_blank" rel="noreferrer"><IoDocument/></a>
+          <a href="https://github.com/mishean" target="_blank" rel="noreferrer" className='link'><BsGithub/></a>
+          <a href="mailto:misheanpeiris@gmail.com" className='link'><MdEmail/></a>
+          <a href={pdf} target="_blank" rel="noreferrer" className='link'><IoDocument/></a>
           
     </div>
     </div>
-    <Footer className='w'/>
+    <Footer/>
     </div>
   );
 };
 
 const Alert = () => (
   <div>
-    <p>Your message was sent successfully, I'll respond asap!</p>
+    <p>Your message was sent successfully, I'll respond asap! 🤝 </p>
   </div>
 )
