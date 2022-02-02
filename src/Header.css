@@ -28,15 +28,15 @@
 
 .item{
      display: inline-block;
-     padding: 10px 15px;
-     color: yellow;
+     padding: 1rem;
+     color: white;
      text-decoration: none;
      font-size: 1.6rem;
 
 }
 
 .logo {
-     color: yellow;
+     color: white;
      text-decoration: none;
      font-size: 2rem;
      padding: 10px 15px;

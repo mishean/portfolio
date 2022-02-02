@@ -74,7 +74,7 @@ export const ContactUs = () => {
 
       <Message value={value.message} handleChange={handleChange} name='message' type='text' placeholder = 'Message' className={`input-input`}/>
       
-      <input type="submit" value="Send" />
+      <input type="submit" value="SEND" />
     </form>
     {status && Alert()}
     <div className='media-link'>

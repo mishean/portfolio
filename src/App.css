@@ -5,6 +5,15 @@ body {
   position: relative;
   height: 100%;
   box-sizing: border-box;
+  background-color: black;
+}
+
+* {
+  font-family: 'Archivo',
+    sans-serif;
+  line-height: 1.6rem;
+  letter-spacing: 0.12rem;
+  word-spacing: 0.16rem;
 }
 
 body {

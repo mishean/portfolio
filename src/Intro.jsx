@@ -1,17 +1,22 @@
 import React from 'react';
 import Footer from './Footer';
 import './Intro.css'
+import Image from './Picture';
 
 export default function Intro() {
     return (
+        <div>
         <div className='body-main'>
             <div className='main'>
             <p className='intro-p'>
                 I am a Toronto based Front-End Developer / UI designer specalizing in building e-commerce, portfolio and experimental art apps 👨🏾‍💻
             </p>
-            <h4>
+            <div className='image'>
+            <Image/>
+            </div>
+            <h2>
                 Services
-            </h4>
+            </h2>
             <ul>
                 <li>Website Development</li>
                 <li>Email Template Design</li>
@@ -20,7 +25,7 @@ export default function Intro() {
                 <li>Branding / Visual Identity</li>
                 <li>Custom Shopify Theme</li>
             </ul>
-            <h4>Tools</h4>
+            <h2>Tools</h2>
             <ul>
                 <li>
                     HTML
@@ -88,6 +93,7 @@ export default function Intro() {
             </ul>
             </div>
             <Footer/>
+        </div>
         </div>
     )
 }
