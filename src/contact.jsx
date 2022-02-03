@@ -60,7 +60,7 @@ export const ContactUs = () => {
     <div className='outtermost'>
       <div className='contact-body'>
       <div>
-        <h2>Please send me a message 📮</h2>
+        <h2 className='h2-element'>Please send me a message 📮</h2>
           <p>
                 For a wider sample of work including public client projects, feel free to include a request for a portfolio in your message. 
           </p>

@@ -11,11 +11,13 @@
 }
 
 .intro-p {
-    padding-top: 5rem;
+    margin-top: 0;
     margin-bottom: 2rem;
+    
 }
 
 .main {
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

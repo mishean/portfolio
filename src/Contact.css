@@ -9,7 +9,10 @@
     align-items: stretch;
 }
 
-
+.h2-element {
+    margin: 0;
+    padding: 0; 
+}
 .contact-body {
        padding-top: 5rem;
 }
