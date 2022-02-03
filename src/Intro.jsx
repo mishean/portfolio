@@ -14,7 +14,7 @@ export default function Intro() {
             <div className='image'>
             <Image/>
             </div>
-            <h2>
+            <h2 className='title'>
                 Services
             </h2>
             <ul>
@@ -25,7 +25,7 @@ export default function Intro() {
                 <li>Branding / Visual Identity</li>
                 <li>Custom Shopify Theme</li>
             </ul>
-            <h2>Tools</h2>
+            <h2 className='title'>Tools</h2>
             <ul>
                 <li>
                     HTML

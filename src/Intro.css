@@ -20,7 +20,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -28,7 +29,7 @@ ul {
     text-align: center;
 }
 
-h2 {
+.title {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }

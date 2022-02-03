@@ -9,7 +9,10 @@
     font-family: 'Archivo',
         sans-serif;
     color: white;
-    background-color: plum;
+    padding: 1rem;
+    position: bottom;
+    flex-shrink: 0;
+    
 }
 
 .orange p {

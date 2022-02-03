@@ -2,29 +2,27 @@
 .outtermost {
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
     min-height: 100vh;
+    justify-items: space-between;
+    background-color: black;
     color: white;
-    background-color: orange;
-    
+    align-items: stretch;
 }
 
+
 .contact-body {
-    padding-top: 5rem;
-    background-color: green;
-    display: flex;
+       padding-top: 5rem;
+}
+
+form {
+    text-align: center;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-position: center;
 }
 
 
-form {
-    text-align: center;
-}
 
 h2 {
     text-align: center;
@@ -37,20 +35,23 @@ p {
 .media-link {
     display: flex;
     flex-direction: row ;
+    justify-content: center;
+    align-items: center;
     padding: 0px;
     margin: 0;
-    background-color: pink;
 }
+
 
 .link {
     margin: 1rem;
     color: white;
     font-size: 2rem;
     transition: 0.3s ease-in-out;
-    background-color: red;
+
 }
 
 .link:hover {
     transform: scale(1.5);
 }
+
 

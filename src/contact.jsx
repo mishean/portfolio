@@ -58,14 +58,14 @@ export const ContactUs = () => {
 
   return (
     <div className='outtermost'>
-    <div className='contact-body'>
-    <div>
+      <div className='contact-body'>
+      <div>
         <h2>Please send me a message 📮</h2>
-        <p>
+          <p>
                 For a wider sample of work including public client projects, feel free to include a request for a portfolio in your message. 
-        </p>
-    </div>
-    <form onSubmit={sendEmail}>
+          </p>
+      </div>
+      <form onSubmit={sendEmail}>
       <Subject value={value.subject} handleChange={handleChange} name='subject' type='text' placeholder = 'Subject' className={`input-input`}/>
 
       <Name value={value.name} handleChange={handleChange} name='name' type='text' placeholder = 'Name' className={`input-input`}/>
@@ -75,18 +75,20 @@ export const ContactUs = () => {
       <Message value={value.message} handleChange={handleChange} name='message' type='text' placeholder = 'Message' className={`input-input`}/>
       
       <input type="submit" value="SEND" />
-    </form>
-    {status && Alert()}
-    <div className='media-link'>
+      </form>
+      {status && Alert()}
+      <div className='media-link'>
           <a href="http://www.linkedin.com/in/mishean-peiris/" target="_blank" rel="noopener noreferrer" className='link'><BsLinkedin/></a> 
             
           <a href="https://github.com/mishean" target="_blank" rel="noreferrer" className='link'><BsGithub/></a>
           <a href="mailto:misheanpeiris@gmail.com" className='link'><MdEmail/></a>
           <a href={pdf} target="_blank" rel="noreferrer" className='link'><IoDocument/></a>
           
+      </div>
     </div>
-    </div>
-    <Footer/>
+    
+      <Footer/>
+     
     </div>
   );
 };
