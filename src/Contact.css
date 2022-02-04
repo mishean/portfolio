@@ -2,11 +2,9 @@
 .outtermost {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    justify-items: space-between;
-    background-color: black;
+    height: 100vh;
+    background-color: orange;
     color: white;
-    align-items: stretch;
 }
 
 .h2-element {
@@ -15,7 +13,8 @@
 }
 .contact-body {
        padding-top: 5rem;
-       flex-grow: 1;
+       background-color: blue;
+       
 }
 
 form {
