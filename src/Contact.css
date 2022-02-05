@@ -3,18 +3,21 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: orange;
-    color: white;
 }
 
 .h2-element {
-    margin: 0;
-    padding: 0; 
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 0;
+    margin-top: 0; 
+}
+
+.new-p{
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }
 .contact-body {
-       padding-top: 5rem;
-       background-color: blue;
-       
+       padding-top: 5rem;      
 }
 
 form {
@@ -25,14 +28,22 @@ form {
     align-items: center;
 }
 
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;;
 
+}
 
 h2 {
     text-align: center;
+    color: white;
 }
 
 p {
     text-align: center;
+    color: white;
 }
 
 .media-link {
@@ -42,6 +53,9 @@ p {
     align-items: center;
     padding: 0px;
     margin: 0;
+    background: ;
+    min-width: 80%;
+    flex-wrap: wrap;
 }
 
 
@@ -50,7 +64,7 @@ p {
     color: white;
     font-size: 2rem;
     transition: 0.3s ease-in-out;
-
+    max-width: 100%;
 }
 
 .link:hover {

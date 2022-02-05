@@ -25,9 +25,10 @@ function Header() {
             window.removeEventListener('scroll', controlNavbar)
         }
     }, [])
+
   
   return (
-    <div>
+    <div >
         <nav className={show ? 'nav nav-2' : 'nav'}>
         <Link className='logo' to="/"> MISHEAN </Link>
         
